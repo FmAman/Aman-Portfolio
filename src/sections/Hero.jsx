@@ -1,14 +1,8 @@
 import { motion } from 'framer-motion';
 import { FiArrowDownCircle, FiMapPin } from 'react-icons/fi';
 import ParticleBackground from '../components/ParticleBackground.jsx';
-import { heroContent } from '../data/content.js';
+import { heroContent, heroHighlights } from '../data/content.js';
 import profileIllustration from '../assets/profile-illustration.svg';
-
-const heroHighlights = [
-  { value: '3+', label: 'Years crafting products' },
-  { value: '28', label: 'Production launches' },
-  { value: '3', label: 'Design systems built' },
-];
 
 function Hero({ onViewProjects, onContact }) {
   return (

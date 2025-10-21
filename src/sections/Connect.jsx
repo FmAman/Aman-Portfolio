@@ -161,7 +161,7 @@ function Connect() {
               </div>
               <a
                 className="button secondary"
-                href="/Alex-Rivera-Resume.pdf"
+                href="/FayazMohamedAman_Resume.pdf"
                 download
               >
                 Download Resume

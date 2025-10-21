@@ -16,9 +16,16 @@ export const heroContent = {
   name: "FM Aman",
   title: "Full Stack Developer",
   tagline:
-    "I design and ship resilient platforms that blend thoughtful UX with performant systems.",
+    "I engineer scalable systems and intuitive interfaces, blending clean architecture with seamless user experiences.",
   location: "Bangalore, India",
 };
+
+export const heroHighlights = [
+  { value: '3+', label: 'Years of hands-on development' },
+  { value: '5+', label: 'Enterprise-grade apps delivered' },
+  { value: '50k+', label: 'Daily users impacted' },
+];
+
 
 // export const skillGroups = [
 //   {

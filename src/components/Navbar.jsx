@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { FiMenu, FiX } from 'react-icons/fi';
-import ThemeToggle from './ThemeToggle.jsx';
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { FiMenu, FiX } from "react-icons/fi";
+import ThemeToggle from "./ThemeToggle.jsx";
+import profileIllustration from "../assets/profile-illustration.svg";
 
 function Navbar({ sections, activeSection, onNavigate }) {
-  const [menuOpen, setMenuOpen] = useState(false);  
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 960) {
@@ -12,28 +13,28 @@ function Navbar({ sections, activeSection, onNavigate }) {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
     if (!menuOpen) {
-      document.body.style.removeProperty('overflow');
+      document.body.style.removeProperty("overflow");
       return undefined;
     }
 
     const handleKey = (event) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         setMenuOpen(false);
       }
     };
 
-    document.body.style.setProperty('overflow', 'hidden');
-    document.addEventListener('keydown', handleKey);
+    document.body.style.setProperty("overflow", "hidden");
+    document.addEventListener("keydown", handleKey);
 
     return () => {
-      document.body.style.removeProperty('overflow');
-      document.removeEventListener('keydown', handleKey);
+      document.body.style.removeProperty("overflow");
+      document.removeEventListener("keydown", handleKey);
     };
   }, [menuOpen]);
 
@@ -44,14 +45,19 @@ function Navbar({ sections, activeSection, onNavigate }) {
   };
 
   return (
-    <header className={`navbar${menuOpen ? ' navbar--open' : ''}`}>
+    <header className={`navbar${menuOpen ? " navbar--open" : ""}`}>
       <div className="navbar__inner container">
         <a
           href="#hero"
           className="navbar__brand"
-          onClick={(event) => handleNavigate('hero', event)}
+          onClick={(event) => handleNavigate("hero", event)}
         >
-          <span className="navbar__brand-mark">AM</span>
+          <span className="navbar__brand-mark">
+            <img
+              src={profileIllustration}
+              alt="Illustrated portrait of Me :)"
+            />
+          </span>
           <span className="navbar__brand-text">FM Aman</span>
         </a>
         <nav className="navbar__links">
@@ -59,7 +65,9 @@ function Navbar({ sections, activeSection, onNavigate }) {
             <a
               key={id}
               href={`#${id}`}
-              className={`navbar__link${activeSection === id ? ' is-active' : ''}`}
+              className={`navbar__link${
+                activeSection === id ? " is-active" : ""
+              }`}
               onClick={(event) => handleNavigate(id, event)}
             >
               {label}
@@ -71,7 +79,9 @@ function Navbar({ sections, activeSection, onNavigate }) {
           <button
             type="button"
             className="navbar__menu-button"
-            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-label={
+              menuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
@@ -94,7 +104,9 @@ function Navbar({ sections, activeSection, onNavigate }) {
               <a
                 key={id}
                 href={`#${id}`}
-                className={`navbar__mobile-link${activeSection === id ? ' is-active' : ''}`}
+                className={`navbar__mobile-link${
+                  activeSection === id ? " is-active" : ""
+                }`}
                 onClick={(event) => handleNavigate(id, event)}
               >
                 {label}
