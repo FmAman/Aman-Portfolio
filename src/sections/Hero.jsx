@@ -9,7 +9,7 @@ function Hero({ onViewProjects, onContact }) {
     <section id="hero" className="section hero" aria-labelledby="hero-heading">
       <ParticleBackground />
       <div className="hero__overlay" aria-hidden="true" />
-      <div className="container hero__container">
+      <div className="container hero__container" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <motion.div
           className="hero__content"
           initial={{ opacity: 0, y: 32 }}

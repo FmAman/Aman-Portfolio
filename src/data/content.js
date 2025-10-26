@@ -13,7 +13,7 @@ import { SiMedium } from "react-icons/si";
 import logo from "../assets/endavaLogo.png";
 
 export const heroContent = {
-  name: "FM Aman",
+  name: "Fayaz Mohamed Aman",
   title: "Full Stack Developer",
   tagline:
     "I engineer scalable systems and intuitive interfaces, blending clean architecture with seamless user experiences.",
@@ -155,42 +155,43 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Portfolio|InsightStream",
+    title: "Portfolio Website",
     description:
-      "Collaborative analytics workspace with live storytelling, annotations, and AI-assisted insights.",
-    tech: ["React", "Node.js", "WebSockets"],
-    repo: "https://github.com/example/insightstream",
-    demo: "https://example.com/insightstream",
+      "A modern, animated portfolio built with React and Framer Motion showcasing projects, experience, and skills. Features smooth transitions, interactive UI, and responsive design optimized for performance and accessibility.",
+    tech: ["React", "Framer Motion", "Github Actions"],
+    repo: "https://github.com/FmAman/Aman-Portfolio",
+    demo: "https://fmaman.github.io/Aman-Portfolio/",
     gradient: "linear-gradient(135deg, #6366f1 0%, #22d3ee 100%)",
   },
   {
-    title: "1mg Clone|Palette Studio",
+    title: "Figma2React - Design to Code Converter",
     description:
-      "Theme-aware design system generator that exports component libraries for React and Vue.",
+      "An intelligent web tool that parses Figma JSON exports and auto-generates reusable, theme-aware React components. Supports live preview, code export, and responsive layouts — bridging the gap between design and development.",
     tech: ["TypeScript", "Figma API", "Styled Components"],
-    repo: "https://github.com/example/palette-studio",
+    repo: "https://github.com/FmAman/Figma2React",
     demo: "https://example.com/palette",
     gradient: "linear-gradient(135deg, #f472b6 0%, #fb7185 100%)",
   },
   {
-    title: "HelpmEsign|PulseCare",
+    title: "HelpMeSign - E-Signature Generator",
     description:
-      "Remote patient monitoring platform with proactive alerting and clinician dashboards.",
-    tech: ["Next.js", "GraphQL", "AWS"],
-    repo: "https://github.com/example/pulsecare",
+      "Developed a responsive Next.js web app to create and embed e-signatures into images and PDFs. Integrated optimized PDF rendering, canvas-based drawing, reducing document signing time by 40%.",
+    tech: ["Next.js", "Node.js", "Canvas API"],
+    repo: "https://github.com/FmAman/HelpMeSign",
     demo: "https://example.com/pulsecare",
     gradient: "linear-gradient(135deg, #34d399 0%, #10b981 100%)",
   },
   {
-    title: "Atlas Docs",
+    title: "MediKart - Medical E-Commerce Platform",
     description:
-      "Documentation engine with markdown, live code sandboxes, and multi-brand theming.",
-    tech: ["MDX", "Vite", "Framer Motion"],
-    repo: "https://github.com/example/atlas-docs",
+      "Developed a feature-rich medical e-commerce platform with secure authentication, product browsing, and cart management. Ensured scalability and performance using React for the frontend and Spring Boot with MySQL for the backend.",
+    tech: ["React", "Spring Boot", "MySQL"],
+    repo: "https://github.com/FmAman/MediKart",
     demo: "https://example.com/atlas",
     gradient: "linear-gradient(135deg, #38bdf8 0%, #818cf8 100%)",
   },
 ];
+
 
 export const socialLinks = [
   {
@@ -211,5 +212,5 @@ export const socialLinks = [
 ];
 
 export const contactConfig = {
-  formEndpoint: "https://formspree.io/f/yourFormId",
+  formEndpoint: "https://formspree.io/f/mjkpbper",
 };

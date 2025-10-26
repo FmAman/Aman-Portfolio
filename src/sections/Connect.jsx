@@ -129,7 +129,7 @@ function Connect() {
               <span>{status.state === 'loading' ? 'Sending' : 'Send Message'}</span>
             </button>
             <p className={`form-status form-status--${status.state}`} role="status" aria-live="polite">
-              {status.state === 'idle' ? 'Tip: update the Formspree endpoint to enable delivery.' : status.message}
+              {status.state === 'idle' ? '' : status.message}
             </p>
           </motion.form>
 
@@ -161,7 +161,7 @@ function Connect() {
               </div>
               <a
                 className="button secondary"
-                href="/FayazMohamedAman_Resume.pdf"
+                href="/Fayaz_Mohamed_Aman_Resume.pdf"
                 download
               >
                 Download Resume
